@@ -76,5 +76,80 @@ Built with Python 3.13+ and modern AI/ML libraries for production-ready email au
 
 ---
 
-### Türkçe Özet
-Bu depo, LangGraph ve LangChain ile geliştirilmiş gelişmiş bir Email Assistant (E-posta Asistanı) içerir. E-postaları otomatik olarak sınıflandırır, yanıtlar ve insan-döngü-içi (HITL) özellikleri ile takvim işlemlerini yönetir. Notebook'u çalıştırarak çeşitli e-posta senaryolarını test edebilirsiniz.
+## 🇹🇷 Türkçe Özet
+
+Email Assistant, LangGraph ve LangChain teknolojileri ile geliştirilmiş, e-posta yönetimini otomatikleştiren gelişmiş bir AI asistan sistemidir. İnsan onayı gerektiren süreçlerle (Human-in-the-Loop) güvenli ve kontrollü e-posta işlemleri sunar.
+
+### 🎯 Ana Özellikler
+
+**Akıllı E-posta Sınıflandırması**
+- **IGNORE (Yoksay)**: Haber bültenleri, spam, önemsiz e-postalar
+- **NOTIFY (Bilgilendir)**: Önemli ama yanıt gerektirmeyen bilgiler
+- **RESPOND (Yanıtla)**: Direkt yanıt gerektiren e-postalar
+- **Otomatik Triage**: AI ile akıllı sınıflandırma
+
+**İnsan-Döngü-İçi (HITL) Kontrol**
+- **Taslak İnceleme**: AI'ın hazırladığı yanıtları önce göster
+- **Düzenleme İmkanı**: Cevapları gönderilmeden önce değiştir
+- **Onay Mekanizması**: Her kritik işlem için kullanıcı onayı
+- **Geri Bildirim**: AI'ın öğrenmesi için feedback verme
+
+**Takvim ve Toplantı Yönetimi**
+- **Otomatik Randevu**: Uygun saatleri bulup toplantı oluştur
+- **Müsaitlik Kontrolü**: Takvim entegrasyonu ile çakışma önleme
+- **Akıllı Zamanlama**: Tercihler ve kurallar dahilinde planlama
+- **Toplantı Detayları**: Lokasyon, katılımcı, ajanda yönetimi
+
+### 🛠️ Teknik Mimari
+
+**LangGraph İş Akışı**
+- **Çoklu Ajan Sistemi**: Uzmanlaşmış ajanlar ve koordinasyon
+- **Durum Yönetimi**: Checkpointing ile süreç takibi
+- **Dinamik Yönlendirme**: İçerik analizine göre karar alma
+- **Araç Entegrasyonu**: Çeşitli servislerin seamless kullanımı
+
+**Kullanılan Teknolojiler**
+- **LangGraph**: İş akışı orkestrayonu
+- **LangChain**: LLM entegrasyonu ve zincirlemesi
+- **Pydantic**: Data validation ve type safety
+- **OpenAI GPT**: Doğal dil işleme yetenekleri
+
+### 💡 Kullanım Senaryoları
+
+**İş Hayatı**
+- **Müşteri E-postaları**: Otomatik sınıflandırma ve yanıtlama
+- **Toplantı Koordinasyonu**: Randevu oluşturma ve yönetimi
+- **E-posta Backlog**: Birikmiş e-postaları hızlı işleme
+- **Priorite Yönetimi**: Önemli e-postaları öne çıkarma
+
+**Kişisel Kullanım**
+- **E-posta Temizliği**: Spam ve gereksiz e-postaları filtreleme
+- **Otomatik Yanıtlar**: Rutin sorulara hızlı cevap
+- **Takvim Planlaması**: Sosyal ve iş randevularını organize etme
+- **Zaman Yönetimi**: E-posta işlerinde verimlilik artışı
+
+### 🚀 Nasıl Çalışır?
+
+1. **E-posta Gelişi**: Sistem yeni e-postaları otomatik analiz eder
+2. **Akıllı Sınıflandırma**: Triage router ile kategorizasyon
+3. **Yanıt Üretimi**: Uygun durumlarda AI yanıt taslağı hazırlar
+4. **İnsan Onayı**: Kritik noktalarda kullanıcı müdahalesi
+5. **İşlem Tamamlama**: Onaylanan işlemler otomatik gerçekleşir
+
+### 🎓 Öğrenme Değeri
+
+Bu proje şunları öğretir:
+- **LangGraph Patterns**: Gelişmiş iş akışı tasarımları
+- **HITL Implementation**: İnsan kontrolü entegrasyonu
+- **State Management**: Karmaşık durum yönetimi
+- **Tool Orchestration**: Çoklu araç koordinasyonu
+- **Production Patterns**: Gerçek dünya AI uygulamaları
+
+### 📦 Proje Dosyaları
+
+- **`app.ipynb`**: Ana uygulama ve demo senaryoları
+- **`prompts.py`**: AI sistem komutları ve triage kuralları
+- **`schemas.py`**: Veri yapıları ve validasyon kuralları
+- **`utils.py`**: Yardımcı fonksiyonlar ve formatlamalar
+
+Bu sistem, e-posta yönetiminde AI'ın gücünü güvenli ve kontrollü şekilde kullanarak günlük iş yükünüzü önemli ölçüde azaltır.
